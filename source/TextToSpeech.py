@@ -3,8 +3,8 @@
 #@author Gustavo Dias A.
 
 import os
-import tkinter
 from tkinter import *
+from tkinter import messagebox
 from tkinter import ttk
 from gtts import gTTS 
 
@@ -34,7 +34,7 @@ class Application:
         self.second_container = Frame(self.main_window, padx=20, bg=BG_COLOR)
         self.second_container.pack()
 
-        self.lbl_input_text = Label(self.second_container, text="Type your text here", bg=BG_COLOR, fg=TXT_COLOR)
+        self.lbl_input_text = Label(self.second_container, text="Input text", bg=BG_COLOR, fg=TXT_COLOR)
         self.lbl_input_text.pack(side=LEFT)
 
         self.entry_input_text = Entry(self.second_container)
@@ -54,11 +54,18 @@ class Application:
         """Gets the text from entry_input_text, converts it using gTTS (Google Text To Speech)
          and reproduces using the operating system command"""
         typed_text = self.entry_input_text.get()
-        output_audio = gTTS(text=typed_text, lang=LANGUAGE, slow=False)
-        output_audio.save("../sound/output.mp3")
-        os.system("afplay ../sound/output.mp3")
-
-
+        
+        if typed_text:
+            output_audio = gTTS(text=typed_text, lang=LANGUAGE, slow=False)
+            output_audio.save("sound/output.mp3")
+       
+            try:
+                os.system("afplay sound/output.mp3")
+            except OSError as err:
+                messagebox.showerror("Error", "Please, check if your play command is right. OS Error: {0}".format(err))
+        else:
+            messagebox.showerror("Error", "This field cannot be empty!")
+        
 root = Tk()
 Application(root)
 root.mainloop()
