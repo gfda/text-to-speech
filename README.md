@@ -36,11 +36,18 @@ from tkinter import ttk
  ```
 
 ## Let's Speak!
-Before running the program, you need to choose the correct player based on your operating system.
-**_afplay_ is a Mac OS command.**
+Before running the program, you need to choose the correct player based on your operating system.  
+
+(**_afplay_ is a Mac OS command.**)
 
 ### Choosing the player
-* Debian Linux based (Ubuntu...)
+
+* For Arch Linux based (Manjaro...)
+```shell
+    $ sudo pacman -S mpg123
+```
+
+* For Debian Linux based (Ubuntu...)
 ```shell
     $ sudo apt-get update
     $ sudo apt-get install mpg123
