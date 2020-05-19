@@ -1,7 +1,7 @@
 # Text-to-speech
 A simple text-to-speech program using:
- * Python3 GUI ( [tkinter](https://docs.python.org/3/library/tkinter.html));
- * Google Text-to-Speech Python lib( [gTTS](https://gtts.readthedocs.io/en/latest/index.html));
+ * Python3 GUI ([tkinter](https://docs.python.org/3/library/tkinter.html));
+ * Google Text-to-Speech Python lib([gTTS](https://gtts.readthedocs.io/en/latest/index.html));
 
 ## Setup
 
@@ -29,7 +29,7 @@ To show errors, attention and other alert messages
 ```python
 from tkinter import messagebox
 ```
-For MAC OS users, some buttons and icons does not work properly. 
+For Mac OS users, some buttons and icons does not work properly. 
 Please, use ttk submodule.
 ```python
 from tkinter import ttk

@@ -64,7 +64,7 @@ class Application:
                 os.system("afplay sound/output.mp3 &")
             except OSError as err:
                 messagebox.showerror("Error", "Please, check if your play command is right. OS Error: {0}".format(err))
-        
+      
         else:
             messagebox.showerror("Error", "This field cannot be empty!")
         
