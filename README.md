@@ -1,4 +1,4 @@
-# text-to-speech
+# Text-to-speech
 A simple text-to-speech program using:
  * Python3 GUI ( [tkinter](https://docs.python.org/3/library/tkinter.html));
  * Google Text-to-Speech Python lib( [gTTS](https://gtts.readthedocs.io/en/latest/index.html));
@@ -25,10 +25,42 @@ Tkinter Python GUI
 ```python
 from tkinter import *
 ```
-
+To show errors, attention and other alert messages
+```python
+from tkinter import messagebox
+```
 For MAC OS users, some buttons and icons does not work properly. 
 Please, use ttk submodule.
 ```python
 from tkinter import ttk
  ```
 
+## Let's Speak!
+Before running the program, you need to choose the correct player based on your operating system.
+**_afplay_ is a Mac OS command.**
+
+### Choosing the player
+* Debian Linux based (Ubuntu...)
+```shell
+    $ sudo apt-get update
+    $ sudo apt-get install mpg123
+```
+
+* For Redhat Linux based (Fedora, SUSE...)
+```shell
+    $ yum install mpg123
+```
+
+* For Windows 
+[mpg123 for Windows](https://mpg123.org/download.shtml)
+
+After successful installation, you can test it.
+```shell
+    $ mpg123 <some_audio_file>.mp3
+```
+### NOTE 
+It's necessary to change _afplay_ to correct mp3 player at /source/TextToSpeech.py
+```Python
+#The argument & indicates afplay to run in the background as a job.
+os.system("afplay sound/output.mp3 &")
+```
