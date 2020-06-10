@@ -48,7 +48,7 @@ Please, use ttk submodule.
 from tkinter import ttk
  ```
 
-## Let's Speak'!'
+## Let's Speak
 
 Before running the program, you need to choose the correct player based on your operating system.  
 
