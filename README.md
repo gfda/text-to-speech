@@ -12,7 +12,7 @@ A simple text-to-speech program using:
 Install Google Text-to-Speech lib
 
 ```shell
-$ pip install gTTS
+pip install gTTS
 ```
 
 ### Imports
@@ -41,14 +41,14 @@ To show errors, attention and other alert messages
 from tkinter import messagebox
 ```
 
-For Mac OS users, some buttons and icons does not work properly. 
+For Mac OS users, some buttons and icons does not work properly.
 Please, use ttk submodule.
 
 ```python
 from tkinter import ttk
  ```
 
-## Let's Speak!
+## Let's Speak'!'
 
 Before running the program, you need to choose the correct player based on your operating system.  
 
@@ -59,20 +59,20 @@ Before running the program, you need to choose the correct player based on your 
 * For Arch Linux based (Manjaro...)
 
 ```shell
-    $ sudo pacman -S mpg123
+sudo pacman -S mpg123
 ```
 
 * For Debian Linux based (Ubuntu...)
 
 ```shell
-    $ sudo apt-get update
-    $ sudo apt-get install mpg123
+sudo apt-get update
+sudo apt-get install mpg123
 ```
 
 * For Redhat Linux based (Fedora, SUSE...)
 
 ```shell
-    $ yum install mpg123
+yum install mpg123
 ```
 
 * For Windows
@@ -81,7 +81,7 @@ Before running the program, you need to choose the correct player based on your 
 After successful installation, you can test it.
 
 ```shell
-    $ mpg123 <some_audio_file>.mp3
+mpg123 <some_audio_file>.mp3
 ```
 
 ### NOTE
