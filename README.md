@@ -2,6 +2,8 @@
 
 ![TTS](images/text-to-speech-python.png)
 
+![GitHub](https://img.shields.io/github/license/gfda/text-to-speech?style=plastic)
+
 A simple text-to-speech program using:
 
 * Python3 GUI ([tkinter](https://docs.python.org/3/library/tkinter.html));
