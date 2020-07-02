@@ -11,8 +11,8 @@ A simple text-to-speech program using:
 
 Install Google Text-to-Speech lib
 
-```shell
-pip install gTTS
+```console
+user@linux:~$ pip install gTTS
 ```
 
 ### Imports
@@ -58,21 +58,21 @@ Before running the program, you need to choose the correct player based on your 
 
 * For Arch Linux based (Manjaro...)
 
-```shell
-sudo pacman -S mpg123
+```console
+user@linux:~$ sudo pacman -S mpg123
 ```
 
 * For Debian Linux based (Ubuntu...)
 
-```shell
-sudo apt-get update
-sudo apt-get install mpg123
+```console
+user@linux:~$ sudo apt-get update
+user@linux:~$ sudo apt-get install mpg123
 ```
 
 * For Redhat Linux based (Fedora, SUSE...)
 
-```shell
-yum install mpg123
+```console
+user@linux:~$ yum install mpg123
 ```
 
 * For Windows
@@ -80,8 +80,8 @@ yum install mpg123
 
 After successful installation, you can test it.
 
-```shell
-mpg123 <some_audio_file>.mp3
+```console
+user@linux:~$ mpg123 <some_audio_file>.mp3
 ```
 
 ### NOTE
