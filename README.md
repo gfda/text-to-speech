@@ -1,6 +1,6 @@
 # Text-to-speech
 
-![gTTS](images/text-to-speech-python.png)
+![TTS](images/text-to-speech-python.png)
 
 A simple text-to-speech program using:
 
