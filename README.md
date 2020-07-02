@@ -95,8 +95,12 @@ It's necessary to change _afplay_ to correct mp3 player at /source/TextToSpeech.
 os.system("afplay sound/output.mp3 &")
 ```
 
-License
+## License
 
 ----
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Autor
+
+[Gustavo Dias A.](https://github.com/gfda)
