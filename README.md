@@ -92,3 +92,9 @@ It's necessary to change _afplay_ to correct mp3 player at /source/TextToSpeech.
 #The argument & indicates afplay to run in the background as a job.
 os.system("afplay sound/output.mp3 &")
 ```
+
+License
+
+----
+
+MIT
