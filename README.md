@@ -101,6 +101,6 @@ os.system("afplay sound/output.mp3 &")
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## Autor
+## Author
 
 [Gustavo Dias A.](https://github.com/gfda)
