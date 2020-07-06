@@ -99,9 +99,7 @@ os.system("afplay sound/output.mp3 &")
 
 ## License
 
-----
-
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License.
 
 ## Author
 
