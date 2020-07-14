@@ -103,4 +103,4 @@ This project is licensed under the [MIT](LICENSE) License.
 
 ## Author
 
-[Gustavo Dias A.](https://github.com/gfda)
+[Gustavo Dias A.](https://www.linkedin.com/in/gustavo-dias-alexandre-543568157/)
